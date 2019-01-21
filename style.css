@@ -1,0 +1,78 @@
+h6{
+    color: white;
+}
+h2{
+    padding-bottom: 20px;
+}
+body{
+      background-color: #70c3be;
+}
+#contatti{
+  background-color: #70c3be;
+  letter-spacing: 2px;
+  }
+#contatti a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+@media (max-width: 575.98px) {
+
+  #contatti{padding-bottom: 800px;}
+  #contatti .maps iframe{
+    width: 100%;
+    height: 450px;
+  }
+ }
+
+
+@media (min-width: 576px) {
+
+   #contatti{padding-bottom: 800px;}
+
+   #contatti .maps iframe{
+     width: 100%;
+     height: 450px;
+   }
+ }
+
+@media (min-width: 768px) {
+
+  #contatti{padding-bottom: 350px;}
+
+  #contatti .maps iframe{
+    width: 100%;
+    height: 850px;
+  }
+}
+#btn btn-light{
+    text-align: center;
+}
+@media (min-width: 992px) {
+  #contatti{padding-bottom: 385px;}
+
+   #contatti .maps iframe{
+     width: 100%;
+     height: 700px;
+   }
+}
+
+.btn{
+        /* background-color: red; */
+    width: 56%;
+    /* align-content: space-around; */
+    /* text-align: -webkit-center; */
+    text-align: -webkit-center;
+    float: right;
+}
+.contact-form{
+    background-color:#43a0a252;
+    padding: inherit;
+        padding-top: 15px;
+}
+#author a{
+  color: #fff;
+  text-decoration: none;
+    
+}
