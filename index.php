@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -12,7 +13,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-
+        <form class="contact-form" action="add_info.php" enctype="multipart/form-data" method="get">
         <div class="row" id="contatti">
             <div class="container mt-5" >
 
@@ -22,41 +23,41 @@
                     </div>
                     <div class="col-md-6">
                         <h2 class="text-uppercase mt-3 font-weight-bold text-white">Online Application Form</h2>
-                        <form class="contact-form" action="">
+                       
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control mt-2" placeholder="First Name *" required>
+                                        <input type="text" class="form-control mt-2" name="first_name" placeholder="First Name *" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control mt-2" placeholder="Last Name" required>
+                                        <input type="text" class="form-control mt-2" name="last_name" placeholder="Last Name" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control mt-2" placeholder="Father's Name" required>
+                                        <input type="text" class="form-control mt-2" name="father_name" placeholder="Father's Name" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control mt-2" placeholder="Mother's Name" required>
+                                        <input type="text" class="form-control mt-2" name="mother_name" placeholder="Mother's Name" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control mt-2" placeholder="Number/WhatApp *" required>
+                                        <input type="text" class="form-control mt-2" name="number" placeholder="Number/WhatApp *" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input type="email" class="form-control mt-2" placeholder="Email *" required>
+                                        <input type="email" class="form-control mt-2" name="email" placeholder="Email *" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control mt-2" placeholder="Address " required>
+                                        <input type="text" class="form-control mt-2" name="address" placeholder="Address " required>
                                     </div>
                                 </div>
                                  
@@ -71,7 +72,7 @@
                              <div class="col-lg-6">
                                     <div class="form-group">
                                          <h6>10th*</h6>
-                                         <select class="form-control" id="exampleFormControlSelect1">
+                                         <select class="form-control" name="ten_pass" id="exampleFormControlSelect1">
                                     <option>Select Year</option>
                                     <option>2010</option>
                                     <option>2011</option>
@@ -89,7 +90,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                          <h6>12th*</h6>
-                                         <select class="form-control" id="exampleFormControlSelect1">
+                                         <select class="form-control" name="twelve_pass" id="exampleFormControlSelect1">
                                     <option>Select Year</option>
                                     <option>2010</option>
                                     <option>2011</option>
@@ -110,17 +111,17 @@
                                 </div>
                                  <div class="col-lg-4">
                                     <div class="form-group">
-                                        <input type="text" class="form-control mt-2" placeholder="Physics " required>
+                                        <input type="text" name="physics" class="form-control mt-2" placeholder="Physics " required>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <input type="text" class="form-control mt-2" placeholder="Chemistry " required>
+                                        <input type="text" name="chemistry" class="form-control mt-2" placeholder="Chemistry " required>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <input type="text" class="form-control mt-2" placeholder="Biology " required>
+                                        <input type="text" name="biology" class="form-control mt-2" placeholder="Biology " required>
                                     </div>
                                 </div>
                             </div>
@@ -137,7 +138,7 @@
                                <div class="col-lg-10">
                                     <div class="form-group">
                                         <div class="form-group">
-                                         <select class="form-control" id="exampleFormControlSelect1">
+                                            <select class="form-control" name="college" id="exampleFormControlSelect1">
                                     <option>Select Collage Here</option>
                                     <option>Diabetic Association Medical College</option>
                                     <option>Mark's Medical College</option>
@@ -159,13 +160,13 @@
                                    </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Note" rows="3" required></textarea>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" name="note" placeholder="Note" rows="3" required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <h6>Attachment Files</h6>
-                                        <input type="file" class="form-control mt-2" placeholder="Address " required>
+                                        <input type="file" name="file" class="form-control mt-2"  required>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -173,36 +174,14 @@
                                             <button class="btn btn-light" type="submit">SUBMIT</button>
                                      </div>
                                 </div>
-                                   <!-- Button to Open the Modal -->
+                             
 
 
 <!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
 
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        Modal body..
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
                                </div>
                             </div>
-                        </form>
+                        
                   
                     </div>
                    
@@ -211,7 +190,34 @@
             </div>
         </div>
 
-       
+       </form>
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
 
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Add Collage</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <form action="add_college.php" method="get">
+          <!-- Modal body -->
+      <div class="modal-body">
+           <div class="form-group">
+               <input type="text" name="college" class="form-control mt-2"  required>
+         </div>
+      </div>
+            <!-- Modal footer -->
+      <div class="modal-footer">
+        <button class="btn btn-success" type="submit">add</button>
+      </div>
+      </form>
+      
+
+    
+
+    </div>
+  </div>
+</div>
     </body>
 </html>
