@@ -1,4 +1,5 @@
 
+
 <html>
     <head>
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -139,16 +140,22 @@
                                     <div class="form-group">
                                         <div class="form-group">
                                             <select class="form-control" name="college" id="exampleFormControlSelect1">
-                                    <option>Select Collage Here</option>
-                                    <option>Diabetic Association Medical College</option>
-                                    <option>Mark's Medical College</option>
-                                    <option>2012</option>
-                                    <option>2013</option>
-                                    <option>2014</option>
-                                    <option>2015</option>
-                                    <option>2016</option>
-                                    <option>2017</option>
-                                    <option>2018</option>
+                                    <option>Select College Here</option>
+                                    <?php
+                                        include 'db.php';
+                                        $sql = "SELECT * FROM college";
+                                        $result = $conn->query($sql);
+
+                                        if ($result->num_rows > 0) {
+                                            // output data of each row
+                                            while($row = $result->fetch_assoc()) {
+                                                echo "<option>" . $row["college"]. "</option>";
+
+                                            }
+                                        }
+                                        $conn->close();
+                                        ?>
+                                 
                                   </select>
                                     </div>
                                     </div>
